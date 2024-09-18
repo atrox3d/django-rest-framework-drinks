@@ -4,5 +4,4 @@ venv/
 build/
 *.log
 .venv/
-
 *.sqlite3
