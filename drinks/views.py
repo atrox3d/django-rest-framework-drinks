@@ -11,6 +11,9 @@ def drink_list(request:HttpRequest):
     serializer = DrinkSerializer(drinks, many=True)
 
     # return json
-    return JsonResponse(serializer.data, safe=False)
+    return JsonResponse(
+        {'drinks': serializer.data}, 
+        safe=False
+    )
 
 
