@@ -13,3 +13,4 @@ def drink_list(request:HttpRequest):
     # return json
     return JsonResponse(serializer.data, safe=False)
 
+
